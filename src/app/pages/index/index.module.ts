@@ -8,7 +8,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 register()
 
-
 @NgModule({
   declarations: [IndexComponent],
   exports:[IndexComponent],
