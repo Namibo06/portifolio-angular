@@ -1,10 +1,10 @@
 <div class="index-container">
   <header>
-    <app-header></app-header>
+    <app-header (downAbout)="about()" (downStacks)="stacks()" (downProjects)="projects()"></app-header>
   </header>
 
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="title-about">
         <h2>Sobre mim</h2>
       </div><!--title-about-->
@@ -19,7 +19,7 @@
       </div><!--content-about-->
     </section><!--about-->
 
-    <section class="stacks">
+    <section class="stacks" id="stacks">
       <div class="title-stacks">
         <h2>Tecnologias</h2>
       </div><!--title-stacks-->
@@ -105,7 +105,7 @@
       </swiper-container>
     </section><!--stacks-->
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="title-projects">
         <h2>Projetos</h2>
       </div><!--title-projects-->
