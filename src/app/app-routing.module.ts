@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './pages/index/index/index.component';
+import { ErrorComponent } from './pages/error/error/error.component';
 
 const routes: Routes = [
   {
@@ -8,7 +9,8 @@ const routes: Routes = [
     component:IndexComponent
   },
   {
-    
+    path:'**',
+    component:ErrorComponent
   }
 ];
 
