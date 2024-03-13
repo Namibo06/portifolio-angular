@@ -19,6 +19,29 @@ main
   transition: 1s
   transition-timing-function: ease-in
 
+  section.about
+    padding: 50px 0
+    div.title-about
+      padding-left: 90px
+      margin-bottom: 30px
+      h2
+        @extend %h2-default
+    div.content-about
+      padding: 0 20px
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+
+      p
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        letter-spacing: 1.5px
+        text-align: justify
+        padding-bottom: 10px
+        &:last-child
+          padding-bottom: 0px
+
   section.stacks
     padding: 50px 0
 
