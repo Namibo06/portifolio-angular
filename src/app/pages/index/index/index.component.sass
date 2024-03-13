@@ -80,14 +80,14 @@ main
     swiper-container
       display: flex
       flex-direction: row
-      height: 350px
+      height: 450px
 
       swiper-slide
         @extend %swiper-slide-default
         div.project-single
           padding: 0 20px
           div.name-project
-            padding: 0 0 10px 90px
+            padding: 0 0 30px 90px
 
             h2
               font-size: 21px
@@ -122,15 +122,33 @@ main
           letter-spacing: 1.2px
 
 @media (width < $layout-breakpoint-medium)
+  section.about
+    div.title-about
+      padding-left: 0px !important
+      text-align: center !important
+
+    div.content-about
+      padding: 0 10px !important
+
+      p
+        font-size: 15px !important
+        line-height: 21px !important
+        letter-spacing: 1px !important
+
+  section.stacks
+    div.title-stacks
+      padding-left: 0px !important
+      text-align: center !important
+
   section.projects
     swiper-container
-      height: 600px !important
+      height: 650px !important
 
       swiper-slide
         div.project-single
           padding: 0 5px !important
           div.name-project
-            padding: 0px !important
+            padding: 0px 0px 30px 0px !important
             text-align: center !important
 
             h2
@@ -145,7 +163,7 @@ main
 @media (width < $layout-breakpoint-small)
   section.projects
     swiper-container
-      height: 700px !important
+      height: 850px !important
 
       swiper-slide
         div.project-single
@@ -162,7 +180,7 @@ main
 @media (width < $layout-breakpoint-x-small)
   section.projects
     swiper-container
-      height: 750px !important
+      height: 950px !important
 
       swiper-slide
         div.project-single
