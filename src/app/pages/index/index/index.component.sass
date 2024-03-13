@@ -3,6 +3,16 @@ $layout-breakpoint-medium:480px
 $layout-breakpoint-small:390px
 $layout-breakpoint-x-small:320px
 
+%h2-default
+  font-size: 24px
+  font-weight: 300
+  letter-spacing: 2px
+
+%swiper-slide-default
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
 main
   font-family: Arial, Helvetica, sans-serif
@@ -13,12 +23,11 @@ main
     padding: 50px 0
 
     div.title-stacks
+      padding-left: 90px
       margin-bottom: 50px
 
       h2
-        font-size: 24px
-        font-weight: 300
-        letter-spacing: 2px
+        @extend %h2-default
 
     swiper-container
       display: flex
@@ -26,10 +35,7 @@ main
       height: 180px
 
       swiper-slide
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
+        @extend %swiper-slide-default
 
         img
           font-size: 48px
@@ -38,12 +44,20 @@ main
         p
           text-align: center
 
+  section.projects
+    padding: 50px 0
 
+    div.title-projects
+      padding-left: 90px
+      margin-bottom: 50px
 
+      h2
+        @extend %h2-default
 
+    swiper-container
+      display: flex
+      flex-direction: row
+      height: 350px
 
-
-
-
-
-
+      swiper-slide
+        @extend %swiper-slide-default
