@@ -80,12 +80,17 @@ main
     swiper-container
       display: flex
       flex-direction: row
-      height: 450px
+      height: auto
 
       swiper-slide
         @extend %swiper-slide-default
+        width: 100%
+        overflow-y: auto
+        margin: 40px 0
+
         div.project-single
-          padding: 0 20px
+          padding: 0px 20px
+
           div.name-project
             padding: 0 0 30px 90px
 
@@ -112,7 +117,6 @@ main
 @media (width < $layout-breakpoint-big)
   section.projects
     swiper-container
-      height: 500px !important
 
       div.content-project
         padding-bottom: 10px
@@ -142,7 +146,6 @@ main
 
   section.projects
     swiper-container
-      height: 650px !important
 
       swiper-slide
         div.project-single
@@ -163,7 +166,6 @@ main
 @media (width < $layout-breakpoint-small)
   section.projects
     swiper-container
-      height: 850px !important
 
       swiper-slide
         div.project-single
@@ -180,7 +182,6 @@ main
 @media (width < $layout-breakpoint-x-small)
   section.projects
     swiper-container
-      height: 950px !important
 
       swiper-slide
         div.project-single
