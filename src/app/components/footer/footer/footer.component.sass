@@ -1,3 +1,8 @@
+$layout-breakpoint-big:580px
+$layout-breakpoint-medium:480px
+$layout-breakpoint-small:390px
+$layout-breakpoint-x-small:320px
+
 %footer-h2
   font-size: 21px
   font-weight: 300
@@ -7,6 +12,7 @@
   margin-bottom: 10px
   cursor: pointer
   transition: 0.2s
+
 
 div.footer-container
   display: flex
@@ -61,3 +67,27 @@ div.footer-container
       font-size: 13px
       color: #888
       letter-spacing: 1.5px
+
+/*media queries*/
+
+@media (width < $layout-breakpoint-medium)
+  div.footer-container
+    div.footer-wraper
+      flex-direction: column
+      justify-content: center
+      width: 100%
+
+      div.links
+        width: 150px
+        max-width: 95%
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        margin-bottom: 40px
+
+      div.networks
+        width: 150px
+        max-width: 95%
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
