@@ -3,16 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndexComponent } from './pages/index/index/index.component';
+
+import { IndexModule } from './pages/index/index.module';
+import { ErrorComponent } from './pages/error/error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IndexModule
   ],
   providers: [],
   bootstrap: [AppComponent]
