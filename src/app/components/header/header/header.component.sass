@@ -1,3 +1,9 @@
+$layout-breakpoint-big:580px
+$layout-breakpoint-medium:480px
+$layout-breakpoint-small:390px
+$layout-breakpoint-x-small:320px
+
+
 %flex-row
   display: flex
   flex-direction: row
@@ -34,3 +40,37 @@ div.header-container
           &:last-child
             margin-right: 0px
 
+/*media queries*/
+
+@media (width < $layout-breakpoint-big)
+  div.header-container
+    padding: 10px
+
+    div.title
+      h2
+        font-size: 24px
+
+    div.links
+      div.menu-desktop
+        ul
+          li
+            margin-right: 15px
+            font-size: 15px
+
+@media (width < $layout-breakpoint-medium)
+  div.header-container
+    div.title
+      h2
+        font-size: 21px
+
+    div.links
+      div.menu-mobile
+        display: block
+
+        div.open-menu-icon
+          fa-icon
+            font-size: 21px
+            cursor: pointer
+
+      div.menu-desktop
+        display: none
