@@ -10,14 +10,18 @@
       </div><!--open-menu-icon-->
 
       <div class="menu-elements" *ngIf="menu_mobile">
-        <div class="close-menu-icon">
-          <button type="button" (click)="close_menu_mobile()">X</button>
-        </div><!--close-menu-icon-->
-        <ul>
-          <li>Sobre mim</li>
-          <li>Projetos</li>
-          <li>Contato</li>
-        </ul>
+        <menu>
+          <div class="close-menu-icon">
+            <button type="button" (click)="close_menu_mobile()">X</button>
+          </div><!--close-menu-icon-->
+
+          <ul>
+            <li>Sobre mim</li>
+            <li>Projetos</li>
+            <li>Contato</li>
+          </ul>
+        </menu>
+
       </div><!--menu-elements-->
     </div><!--menu-mobile-->
 
