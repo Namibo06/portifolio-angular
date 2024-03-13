@@ -23,4 +23,9 @@ export class IndexComponent {
     const projects=document.getElementById('projects');
     projects?.scrollIntoView({behavior:'smooth'});
   }
+
+  home(){
+    const home=document.getElementById('home');
+    home?.scrollIntoView({behavior:'smooth'});
+  }
 }

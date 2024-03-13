@@ -1,5 +1,5 @@
 <div class="index-container">
-  <header>
+  <header id="home">
     <app-header (downAbout)="about()" (downStacks)="stacks()" (downProjects)="projects()"></app-header>
   </header>
 
@@ -209,6 +209,6 @@
   </main>
 
   <footer>
-    <app-footer></app-footer>
+    <app-footer (topAbout)="about()" (topStacks)="stacks()" (topProjects)="projects()" (top)="home()"></app-footer>
   </footer>
 </div><!--index-container-->
