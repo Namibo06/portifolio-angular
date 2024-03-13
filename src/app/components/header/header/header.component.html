@@ -1,1 +1,32 @@
-<p>header works!</p>
+<div class="header-container">
+  <div class="title">
+    <h2>Joalisson P. Maia</h2>
+  </div><!--title-->
+
+  <div class="links">
+    <div class="menu-mobile">
+      <div class="open-menu-icon">
+        <fa-icon [icon]="open_menu" (click)="open_menu_mobile()"></fa-icon>
+      </div><!--open-menu-icon-->
+
+      <div class="menu-elements" *ngIf="menu_mobile">
+        <div class="close-menu-icon">
+          <button type="button" (click)="close_menu_mobile()">X</button>
+        </div><!--close-menu-icon-->
+        <ul>
+          <li>Sobre mim</li>
+          <li>Projetos</li>
+          <li>Contato</li>
+        </ul>
+      </div><!--menu-elements-->
+    </div><!--menu-mobile-->
+
+    <div class="menu-desktop">
+      <ul>
+        <li>Sobre mim</li>
+        <li>Projetos</li>
+        <li>Contato</li>
+      </ul>
+    </div><!--menu-desktop-->
+  </div><!--links-->
+</div><!--header-container-->
