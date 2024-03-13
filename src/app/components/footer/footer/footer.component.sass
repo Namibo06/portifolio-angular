@@ -13,6 +13,11 @@ $layout-breakpoint-x-small:320px
   cursor: pointer
   transition: 0.2s
 
+@mixin icons($color: #00ff00)
+  font-size: 27px
+  margin-right: 5px
+  color: $color
+
 
 div.footer-container
   display: flex
@@ -51,10 +56,17 @@ div.footer-container
         display: flex
         flex-direction: row
         align-items: center
+        &:nth-child(2)
+          fa-icon
+            @include icons
 
-        fa-icon
-          font-size: 21px
-          margin-right: 5px
+        &:nth-child(3)
+          fa-icon
+            @include icons($color: #525352)
+
+        &:nth-child(4)
+          fa-icon
+            @include icons($color: #1d048d)
 
         span
           font-size: 15px
