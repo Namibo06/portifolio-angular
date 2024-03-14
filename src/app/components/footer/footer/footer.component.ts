@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import {faFacebook,faLinkedin, faWhatsapp} from  '@fortawesome/free-brands-svg-icons';
+import {faFacebook,faGithub,faLinkedin, faWhatsapp} from  '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -11,7 +11,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 export class FooterComponent {
   whatsapp:IconDefinition=faWhatsapp;
   linkedIn:IconDefinition=faLinkedin;
-  gmail:IconDefinition=faEnvelope;
+  github:IconDefinition=faGithub;
 
   @Output() topAbout = new EventEmitter<any>();
   @Output() topStacks = new EventEmitter<any>();

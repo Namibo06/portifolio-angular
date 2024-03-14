@@ -7,9 +7,10 @@ $layout-breakpoint-x-small:320px
   font-size: 21px
   font-weight: 300
   padding-bottom: 20px
+  letter-spacing: 2px
 
 %wraper
-  margin-bottom: 10px
+  margin-bottom: 15px
   cursor: pointer
   transition: 0.2s
 
@@ -25,11 +26,14 @@ div.footer-container
   transition: 1s
   transition-timing-function: ease-in
   font-family: Arial, Helvetica, sans-serif
+  background: rgb(32, 32, 32)
+  color: #ffffffd7
 
   div.footer-wraper
     display: flex
     flex-direction: row
     justify-content: space-around
+    padding-top: 30px
 
     div.links
       div.title
@@ -42,9 +46,10 @@ div.footer-container
           list-style-type: none
           font-size: 15px
           font-weight: bold
-          color: rgb(12,14,90)
+          color: #ffffffd7
+          letter-spacing: 1.5px
           &:hover
-            color: rgb(0,0,200)
+            color: #ffffff60
 
     div.networks
       div.title
@@ -59,14 +64,20 @@ div.footer-container
         &:nth-child(2)
           fa-icon
             @include icons
+            &:hover
+              @include icons($color: #00ff0085)
 
         &:nth-child(3)
           fa-icon
             @include icons($color: #525352)
+            &:hover
+              @include icons($color: #5253528f)
 
         &:nth-child(4)
           fa-icon
-            @include icons($color: #1d048d)
+            @include icons($color: #4722ee)
+            &:hover
+              @include icons($color: #4722ee8f)
 
         span
           font-size: 15px
@@ -90,7 +101,7 @@ div.footer-container
       width: 100%
 
       div.links
-        width: 150px
+        width: 180px
         max-width: 95%
         position: relative
         left: 50%
@@ -98,7 +109,7 @@ div.footer-container
         margin-bottom: 40px
 
       div.networks
-        width: 150px
+        width: 180px
         max-width: 95%
         position: relative
         left: 50%

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faArrowLeft, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -7,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './index.component.sass'
 })
 export class IndexComponent {
+  gmail:IconDefinition=faEnvelope;
+  arrow_left:IconDefinition=faArrowLeft;
+
   constructor(){}
 
   about(){

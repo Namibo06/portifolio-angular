@@ -90,6 +90,10 @@ main
 
         div.project-single
           padding: 0px 20px
+          width: 800px
+          max-width: 95%
+          height: 400px
+          overflow: auto
 
           div.name-project
             padding: 0 0 30px 90px
@@ -114,6 +118,38 @@ main
               margin-bottom: 10px
               color: rgb(12,14,90)
 
+  section.contact
+    padding: 20px 0 120px 0
+    div.title-contact
+      padding-left: 90px
+      margin-bottom: 50px
+      h2
+        @extend %h2-default
+
+    div.content-contact
+      width: 600px
+      max-width: 96%
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      a
+        display: flex
+        flex-direction: row
+        align-items: center
+        text-decoration: none
+        color: #333
+        margin-bottom: 20px
+        fa-icon.gmail
+          margin-right: 20px
+          font-size:24px
+          cursor: default
+        span
+          font-size: 16px
+          fa-icon
+            margin-right: 5px
+
+/*media query*/
+
 @media (width < $layout-breakpoint-big)
   section.projects
     swiper-container
@@ -124,6 +160,18 @@ main
           line-height: 21px
           font-size: 15px
           letter-spacing: 1.2px
+
+  section.contact
+    div.content-contact
+      padding: 0 10px
+      font-size: 14px
+      a
+        fa-icon
+        font-size: 14px !important
+        span
+          font-size: 14px !important
+      p
+        text-align: center
 
 @media (width < $layout-breakpoint-medium)
   section.about
@@ -189,3 +237,12 @@ main
             p
               line-height: 12px
               font-size: 11px
+  section.contact
+    div.content-contact
+      padding: 0 5px
+      font-size: 12px
+      a
+        fa-icon
+        font-size: 12px !important
+        span
+          font-size: 12px !important

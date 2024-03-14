@@ -16,12 +16,14 @@ div.header-container
   font-family: Arial, Helvetica, sans-serif
   transition: 1s
   transition-timing-function: ease-in
+  background: rgb(32, 32, 32)
+  color: #ffffffd7
+  height: 90px
 
   div.title
     h2
       font-size: 30px
       font-weight: 300
-      color: #444
       cursor: default
 
   div.links
@@ -36,8 +38,10 @@ div.header-container
           list-style-type: none
           font-size: 16px
           font-weight: bold
-          color: #666
           cursor: pointer
+          transition: 0.2s
+          &:hover
+            color: #ffffff60
           &:last-child
             margin-right: 0px
 
@@ -85,15 +89,15 @@ div.header-container
             background: rgb(32, 32, 32)
             color: #fff
             position: fixed
-            height: 100vh
+            height: 100%
             width: 100%
-            padding-top: 20px
+            padding-top: 35px
             z-index: 999
 
             div.close-menu-icon
               button
                 position: absolute
-                right: 10px
+                right: 12px
                 font-size: 21px
                 background-color: transparent
                 color: #ff0000

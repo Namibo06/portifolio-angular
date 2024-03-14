@@ -28,13 +28,16 @@ export class HeaderComponent {
 
   about(){
     this.downAbout.emit(null);
+    this.menu_mobile=false;
   }
 
   stacks(){
     this.downStacks.emit(null);
+    this.menu_mobile=false;
   }
 
   projects(){
     this.downProjects.emit(null);
+    this.menu_mobile=false;
   }
 }
