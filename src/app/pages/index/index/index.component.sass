@@ -57,6 +57,16 @@ main
       flex-direction: row
       height: 180px
 
+    swiper-container
+      &::part(button-prev)
+        color: #000
+      &::part(button-next)
+        color: #000
+      &::part(bullet)
+        background-color: #8b8585
+      &::part(bullet-active)
+        background-color: #3d3737
+
       swiper-slide
         @extend %swiper-slide-default
 

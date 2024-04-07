@@ -121,15 +121,22 @@
         <swiper-slide>
           <div class="project-single">
             <div class="name-project">
-              <h2>Hotel Angular (Front-end)</h2>
+              <h2>Hotel</h2>
             </div><!--name-project-->
 
             <div class="content-project">
-              <p>Aplicação de Hotelaria básica,foi feito o front-end em Angular com TypeScript,ele basicamente se restringe a tela de login,cadastro,index, visualizar todas suítes,visualizar  uma única suíte.No front-end possui validações nas quais o sistema verifica se veio um registro por json que foi atribuido numa variável na qual pode deixar o botão de visualizar uma única suíte para marcar a data desabilitado,até a suíte está disponível novamente,e se tentar forçar pela url ainda assim não consegue,pois é redirecionado a tela de visualização de todas suítes.</p>
+              <p>
+                Aplicação de Hotelaria básica,foi feito o front-end em Angular com TypeScript,ele basicamente se restringe a tela de login,cadastro,index, visualizar todas suítes,visualizar  uma única suíte.No front-end possui validações nas quais o sistema verifica se veio um registro por json que foi atribuido numa variável na qual pode deixar o botão de visualizar uma única suíte para marcar a data desabilitado,até a suíte está disponível novamente,e se tentar forçar pela url ainda assim não consegue,pois é redirecionado a tela de visualização de todas suítes.
+              </p>
+
+              <p>
+                A parte back-end do Hotel é uma API simples,que recebe e valida dados para cadastro e autenticação para realizar o login,marca horário e checa disponibilidade das suítes,puxa todos registros das suítes e também puxa o registro pelo id ,foi utilizado JWT (JavaScript Web Token) para autenticação de credenciais para o usuário permanecer logado e não precisar está enviando requisições ao banco a todo instante.
+              </p>
             </div><!--content-project-->
 
             <nav class="link-project">
-              <a href="">No GitHub</a>
+              <a href="">GitHub (Front-end)</a>
+              <a href="">Github (Back-end)</a>
             </nav><!--link-project-->
           </div><!--project-single-->
         </swiper-slide>
@@ -137,15 +144,22 @@
         <swiper-slide>
           <div class="project-single">
             <div class="name-project">
-              <h2>Hotel Angular (Back-end)</h2>
+              <h2>Lava Rápido</h2>
             </div><!--name-project-->
 
             <div class="content-project">
-              <p>A parte back-end do Hotel é uma API simples,que recebe e valida dados para cadastro e autenticação para realizar o login,marca horário e checa disponibilidade das suítes,puxa todos registros das suítes e também puxa o registro pelo id ,foi utilizado JWT (JavaScript Web Token) para autenticação de credenciais para o usuário permanecer logado e não precisar está enviando requisições ao banco a todo instante.</p>
+              <p>
+                Site para para um Lava Rápido,tive problemas no meio do projeto na hora de deixa-lo responsivo,mas utilizei uma forma que tenho para estes casos que é dando um 'display:none' nas tags 'section' do projeto,rapidinho consegui solucionar,tecnologias utilizadas foram: Angular com TypeScript,e algumas bibliotecas como Swiper (manipulações de slides),Ngx Mask (mascarar campos),Cookie Service (manipular cookies) e FontAwesome (para utilizar ícones).
+              </p>
+
+              <p>
+                Para o back-end projetei uma Api feita totalmente com Laravel 10,utilizei token JWT (JavaScript Web Token) para autenticar os usuários,é uma api simples para o usuário temos duas funções no controller que é para cadastrar e autenticar,e para o Lava Rápido temos 3 funções,para puxar os registros dos horários,para marcar horários,e um especifíco para o administrador do site para confirmar os horários,tudo isso feito com validação tanto do pacote Validator quanto por verificações dos registros que já estão no banco de dados como por exemplo verificar se o horário já está marcado para não escolher outro igual.Escolhi para guardar os dados o banco de dados relacional PostgreSQL.
+              </p>
             </div><!--content-project-->
 
             <nav class="link-project">
-              <a href="">No GitHub</a>
+              <a href="https://github.com/Namibo06/lavaRapido_angular">GitHub (Front-end)</a>
+              <a href="https://github.com/Namibo06/api_lavaRapido_laravel">GitHub (Back-end)</a>
             </nav><!--link-project-->
           </div><!--project-single-->
         </swiper-slide>
@@ -153,39 +167,7 @@
         <swiper-slide>
           <div class="project-single">
             <div class="name-project">
-              <h2>Lava Rápido (Front-end)</h2>
-            </div><!--name-project-->
-
-            <div class="content-project">
-              <p>Site para para um Lava Rápido,tive problemas no meio do projeto na hora de deixa-lo responsivo,mas utilizei uma forma que tenho para estes casos que é dando um 'display:none' nas tags 'section' do projeto,rapidinho consegui solucionar,tecnologias utilizadas foram: Angular com TypeScript,e algumas bibliotecas como Swiper (manipulações de slides),Ngx Mask (mascarar campos),Cookie Service (manipular cookies) e FontAwesome (para utilizar ícones).</p>
-            </div><!--content-project-->
-
-            <nav class="link-project">
-              <a href="https://github.com/Namibo06/lavaRapido_angular">No GitHub</a>
-            </nav><!--link-project-->
-          </div><!--project-single-->
-        </swiper-slide>
-
-        <swiper-slide>
-          <div class="project-single">
-            <div class="name-project">
-              <h2>Lava Rápido (Back-end)</h2>
-            </div><!--name-project-->
-
-            <div class="content-project">
-              <p>Projetei uma Api feita totalmente com Laravel 10,utilizei token JWT (JavaScript Web Token) para autenticar os usuários,é uma api simples para o usuário temos duas funções no controller que é para cadastrar e autenticar,e para o Lava Rápido temos 3 funções,para puxar os registros dos horários,para marcar horários,e um especifíco para o administrador do site para confirmar os horários,tudo isso feito com validação tanto do pacote Validator quanto por verificações dos registros que já estão no banco de dados como por exemplo verificar se o horário já está marcado para não escolher outro igual.Escolhi para guardar os dados o banco de dados relacional PostgreSQL.</p>
-            </div><!--content-project-->
-
-            <nav class="link-project">
-              <a href="https://github.com/Namibo06/api_lavaRapido_laravel">No GitHub</a>
-            </nav><!--link-project-->
-          </div><!--project-single-->
-        </swiper-slide>
-
-        <swiper-slide>
-          <div class="project-single">
-            <div class="name-project">
-              <h2>Login Moderno (Front-end)</h2>
+              <h2>Login Moderno</h2>
             </div><!--name-project-->
 
             <div class="content-project">
@@ -193,7 +175,7 @@
             </div><!--content-project-->
 
             <nav class="link-project">
-              <a href="https://github.com/Namibo06/login-moderno-angular">No GitHub</a>
+              <a href="https://github.com/Namibo06/login-moderno-angular">GitHub (Front-end)</a>
               <a href="https://login-moderno-angular.vercel.app">Em produção</a>
             </nav><!--link-project-->
           </div><!--project-single-->
