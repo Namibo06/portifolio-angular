@@ -60,7 +60,11 @@ div.footer-container
         @extend %wraper
         display: flex
         flex-direction: row
-        align-items: center
+
+        a
+          text-decoration: none
+          color: #fff
+
         &:nth-child(2)
           fa-icon
             @include icons
@@ -81,6 +85,8 @@ div.footer-container
 
         span
           font-size: 15px
+          position: relative
+          bottom: 5px
 
   div.copyright
     text-align: center
